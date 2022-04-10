@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Siddharth_M_AlgorithmsLabSoutionQ1.iml" filepath="$PROJECT_DIR$/.idea/Siddharth_M_AlgorithmsLabSoutionQ1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Transaction/Transaction.iml" filepath="$PROJECT_DIR$/Transaction/Transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Traveller/Traveller.iml" filepath="$PROJECT_DIR$/Traveller/Traveller.iml" />
     </modules>
   </component>
 </project>

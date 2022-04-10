@@ -40,7 +40,7 @@ public class dailyTransaction {
 			}
 			index++;
 		}
-		if(flag == false){
+		if(!flag){
 			System.out.println("Given target is not achieved");
 		}
 	}
