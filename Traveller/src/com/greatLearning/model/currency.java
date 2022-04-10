@@ -18,26 +18,36 @@ public class currency {
 		this.amount_to_pay = amount_to_pay;
 	}
 
-	private void sort(){
-		int temp;
-		for(int i=0;i<currency_list.length;i++){
-			for (int j=i+1;j<currency_list.length;j++){
-				if(currency_list[i]>currency_list[j]){
-					temp = currency_list[i];
-					currency_list[i]=currency_list[j];
-					currency_list[j]=temp;
-				}
+	private boolean check(int number){
+		for(int x : currency_list){
+			if(x==number){
+				return true;
 			}
 		}
+		return false;
 	}
 
 	public void getCurrencyDenominations(){
+		int number;
+		boolean checkNumber = false;
 		System.out.println("Enter the currency denominations value");
 		for(int i=0;i<currency_list.length;i++){
-			currency_list[i]=getData.nextInt();
-			print_currency_list[i]=0;
+			number = getData.nextInt();
+			checkNumber= check(number);
+			if(!checkNumber){
+				currency_list[i]=number;
+				print_currency_list[i]=0;
+			}
+			else {
+				System.out.println("Currency denominations Repeated \n Please re-enter the value");
+				i--;
+			}
+
+
 		}
-		sort();
+		mergeSort m1= new mergeSort();
+		m1.divide(currency_list,currency_list.length);
+
 	}
 
 	public void printCurrencyDenominations(){
