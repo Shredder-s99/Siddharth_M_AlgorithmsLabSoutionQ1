@@ -58,6 +58,9 @@ public class currency {
 			   amount_to_pay-=currency_list[i];
 		   }
 	   }
+	   if(amount_to_pay >0){
+		   print_currency_list[0]++;
+	   }
 	   System.out.println("Your payment approach in order to give min no of notes will be");
 	   for(int i=currency_list.length-1;i>-1;i--){
 		   if(print_currency_list[i]!=0){
